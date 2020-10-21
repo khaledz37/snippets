@@ -7,5 +7,19 @@
 			"?>"
 		],
 		"description": "php"
+	},
+	"methodp": {
+		"prefix": "mp",
+		"body": [
+			"method=\"post\""
+		],
+		"description": "method"
+	},
+	"methodg": {
+		"prefix": "mg",
+		"body": [
+			"method=\"get\""
+		],
+		"description": "method"
 	}
 }
