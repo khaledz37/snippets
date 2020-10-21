@@ -1,0 +1,35 @@
+"xmlhttp": {
+        "prefix": "nxml",
+        "body": [
+            "const xmlhttp = new XMLHttpRequest()",
+            "    xmlhttp.onreadystatechange = function() {",
+            "        if (this.readyState == 4 && this.status == 200) {",
+            "              $1",
+            "        }",
+            "    };",
+            "    xmlhttp.open(\"POST\", \"$2\", true);",
+            "    xmlhttp.send();"
+        ],
+        "description": "xmlhttp"
+    },
+    "getid": {
+        "prefix": "dci",
+        "body": [
+            "document.getElementById(\"$0\")"
+        ],
+        "description": "getid"
+    },
+    "gettagname": {
+        "prefix": "dct",
+        "body": [
+            "document.getElementsByTagName(\"$0\")"
+        ],
+        "description": "gettagname"
+    },
+    "getclassname": {
+        "prefix": "dcc",
+        "body": [
+            "document.getElementsByClassName(\"$0\")"
+        ],
+        "description": "getclassname"
+    }
