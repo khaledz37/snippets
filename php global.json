@@ -1,0 +1,11 @@
+{
+	"php": {
+		"prefix": "pp",
+		"body": [
+			"<?php ",
+			"    $0",
+			"?>"
+		],
+		"description": "php"
+	}
+}
