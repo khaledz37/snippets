@@ -1,0 +1,167 @@
+{
+    "select from": {
+        "prefix": "s",
+        "body": [
+            "select * from $0;"
+        ],
+        "description": "select from"
+    },
+    "create-table": {
+        "prefix": "crt",
+        "body": [
+            "create table if not exists $1 (",
+            "   $2",
+            ");"
+        ],
+        "description": "create-table"
+    },
+    "drop table": {
+        "prefix": "drt",
+        "body": [
+            "drop table if exists $0;"
+        ],
+        "description": "drop table"
+    },
+    "varchar": {
+        "prefix": "vac",
+        "body": [
+            "varchar(255),"
+        ],
+        "description": "varchar"
+    },
+    "order by": {
+        "prefix": "ord",
+        "body": [
+            "order by "
+        ],
+        "description": "order by"
+    },
+    "limit": {
+        "prefix": "li",
+        "body": [
+            "limit "
+        ],
+        "description": "limit "
+    },
+    "select-from": {
+        "prefix": "sf",
+        "body": [
+            "select $1",
+            "from $2"
+        ],
+        "description": "select-from"
+    },
+    "count": {
+        "prefix": "cot",
+        "body": [
+            "count($0)"
+        ],
+        "description": "count"
+    },
+    "select from where": {
+        "prefix": "sfw",
+        "body": [
+            "select $1",
+            "from $2",
+            "where $3"
+        ],
+        "description": "select from where"
+    },
+    "average": {
+        "prefix": "avg",
+        "body": [
+            "avg($0) "
+        ],
+        "description": "average"
+    },
+    "union": {
+        "prefix": "un",
+        "body": [
+            "union",
+            ""
+        ],
+        "description": "union"
+    },
+    "insert values": {
+        "prefix": "ins",
+        "body": [
+            "insert into $1 values($2);"
+        ],
+        "description": "insert values"
+    },
+    "insert into  values": {
+        "prefix": "insi",
+        "body": [
+            "insert into $1 ($2) values($3);"
+        ],
+        "description": "insert into  values"
+    },
+    "update": {
+        "prefix": "up",
+        "body": [
+            "update $1",
+            "set $2",
+            "where $3"
+        ],
+        "description": "update"
+    },
+    "select from join on": {
+        "prefix": "sfjo",
+        "body": [
+            "select $0",
+            "from ",
+            "join ",
+            "on "
+        ],
+        "description": "select from join on"
+    },
+    "select from where in": {
+        "prefix": "sfwi",
+        "body": [
+            "select $1",
+            "from $2",
+            "where $3 in (",
+            "  $0",
+            ")"
+        ],
+        "description": "select from where in"
+    },
+    "delete from where": {
+        "prefix": "dfw",
+        "body": [
+            "delete from $0",
+            "where "
+        ],
+        "description": "delete from where"
+    },
+    "AUTO INCREMENT": {
+        "prefix": "au",
+        "body": [
+            "AUTO_INCREMENT"
+        ],
+        "description": "AUTO INCREMENT"
+    },
+    "primary key": {
+        "prefix": "pk",
+        "body": [
+            "primary key"
+        ],
+        "description": "primary key"
+    },
+    "delete": {
+        "prefix": "def",
+        "body": [
+            "delete from $1",
+            "where $2;"
+        ],
+        "description": "delete"
+    },
+    "alter": {
+        "prefix": "alt",
+        "body": [
+            "alter table $1",
+            "AUTO_INCREMENT=1"
+        ],
+        "description": "alter"
+    }
+}
