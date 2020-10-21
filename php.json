@@ -1,0 +1,74 @@
+{
+    "php": {
+        "prefix": "pp",
+        "body": [
+            "<?php",
+            "  $0",
+            "?>"
+        ],
+        "description": "php"
+    },
+    "echo": {
+        "prefix": "ec",
+        "body": [
+            "echo '$0';"
+        ],
+        "description": "echo"
+    },
+    "echo html": {
+        "prefix": "ech",
+        "body": [
+            "echo'<$1>$0</$1>'"
+        ],
+        "description": "echo html"
+    },
+    "variable": {
+        "prefix": "va",
+        "body": [
+            "$$1 = $0;"
+        ],
+        "description": "variable"
+    },
+    "get": {
+        "prefix": "g",
+        "body": [
+            "$$_GET['$1']"
+        ],
+        "description": "get"
+    },
+    "echo get": {
+        "prefix": "gt",
+        "body": [
+            "echo $$_GET['$1'];"
+        ],
+        "description": "echo get"
+    },
+    "echo post": {
+        "prefix": "pt",
+        "body": [
+            "echo $$_POST['$1'];"
+        ],
+        "description": "post"
+    },
+    "post": {
+        "prefix": "ps",
+        "body": [
+            "$$_POST['$1'];"
+        ],
+        "description": "post"
+    },
+    "array": {
+        "prefix": "ar",
+        "body": [
+            "array($1$2);"
+        ],
+        "description": "array"
+    },
+    "include": {
+        "prefix": "incl",
+        "body": [
+            "include '$1';"
+        ],
+        "description": "include"
+    }
+}
